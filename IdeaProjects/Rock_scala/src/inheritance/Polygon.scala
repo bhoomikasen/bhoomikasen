@@ -7,12 +7,16 @@ def area:Double
 
 object Polygon{
   def main(args: Array[String]): Unit = {
-    var poly = new Polygon;
-    println(poly.area)
+    //var poly = new Polygon;
+    //println(poly.area)
     var  rect =new Rectangle(55.2,30.0);
     println(rect.area)
-    var  tri =new Triangle(55.2,30.0);
+
+    var  tri =new Triangle(55.2,30.0,0);
+    var tri1=new Triangle(2,3,5);
+
     printArea(tri)
+    println(tri1.perimeter);
     //println(poly);
 
   }
