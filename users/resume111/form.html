@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <form method="post" action="student-response.jsp">
+        <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id=" name="firstname" name="firstname" placeholder="Mark" required>
+  </div>
+  <h1 class="text-center mb-4 title"><%= request.getParameter("firstname")%> <%= request.getParameter("lastname") %></h1>
+
+    </form>
+</html>
