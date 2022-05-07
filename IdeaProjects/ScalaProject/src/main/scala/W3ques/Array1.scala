@@ -23,7 +23,19 @@ a new array taking the middle element from three arrays of length 5*/
       }
     }
   }
-  }
+
+/*
+  17. Write a Scala program to remove duplicate elements from an array of strings.
+*/
+  def removeDuplicate(arr:Array[Int]): Unit = {
+    arr.sorted
+    for(i<-0 to arr.length-1)
+      println(arr(i))
+      }
+
+
+
+}
 
 object objArray1 extends App{
   val o1=new Array1
@@ -34,4 +46,5 @@ object objArray1 extends App{
       print(s"${x}, ")
     }
   o1.common(Array("hey","hi","hello"),Array("hey","hh","hello"))
+  o1.removeDuplicate(Array(13,5,1,2,8))
 }
